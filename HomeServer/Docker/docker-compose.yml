@@ -19,7 +19,7 @@ services:
     volumes:
       - nextcloud:/var/www/html
     environment:
-      - VIRTUAL_HOST=
+      - VIRTUAL_HOST=nextcloud.danielokita.com
       - LETSENCRYPT_HOST=
       - LETSENCRYPT_EMAIL=
       - POSTGRES_HOST=db
