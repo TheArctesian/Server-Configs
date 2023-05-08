@@ -38,7 +38,7 @@
   # Select internationalisation properties.
   i18n = {
     consoleKeyMap = ./dvp-1_2_1.map.gz;
-    defaultLocale = "en_US.UTF-8";
+    defaultLocale = "en_UK.UTF-8";
   };
 
   # nVidia driver
@@ -105,7 +105,7 @@
     };
   };
 
-  users.extraGroups.vboxusers.members = [ "shana" ];
+  users.extraGroups.vboxusers.members = [ "vBox" ];
 
   virtualisation.docker = {
     enable = true;
@@ -118,13 +118,13 @@
   # Don't blind me
   systemd.services.redshift.restartIfChanged = false;
 
-  time.timeZone = "Europe/London";
+  time.timeZone = "Asia/Hong_Kong";
 
   # Users
   users.extraUsers.shana = {
     createHome = true;
-    home = "/home/shana";
-    description = "Mateusz Kowalczyk";
+    home = "/home/the";
+    description = "me";
     extraGroups = [ "wheel" "audio" "video" "networkmanager" "docker" ];
     useDefaultShell = true;
   };
